@@ -2,7 +2,92 @@
 @import 'global';
 @import 'fonts';
 
-
+.header__top{
+    background-color: #303030; 
+}
+.header__top-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 45px;
+    .contacts{
+        a{
+            margin-left: 30px;
+        }
+        .contact-phone{
+            position: relative;
+            &::before{
+                content: '\f095';
+                font-family: 'icomoon';
+                position: absolute;
+                font-size: 14px;
+                color: $bg;
+                left: -16px;
+                top: 1px;
+            } 
+        }
+        .contact-email{
+            position: relative;
+            &::before{
+                content: '\f003';
+                font-family: 'icomoon';
+                position: absolute;
+                font-size: 14px;
+                color: $bg;
+                left: -21px;
+                top: 0px;
+            } 
+        }
+    }
+    .consul{
+        position: relative;
+        padding: 16px 22px 16px 55px;
+        background-color: $bg;
+        font-size: 16px;
+        color: #1b1b1b; 
+        margin-left: 27px;
+            &::before{
+            content: '\f0b1';
+            font-family: 'icomoon';
+            position: absolute;
+            left: 22px;
+        } 
+    }
+}
+.header__content-inner{
+    min-height: 93px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        color: $bg;
+        font-size: 30px;
+        font-weight: 500;
+        span{
+            font-weight: 100;
+            color: #000;
+        }
+    }
+    .menu{
+        li{
+            display: inline-block;
+            & + li{
+                margin-left: 10px;
+            }
+            a{
+                padding: 10px 19px;
+                color: #323232;
+                font-size: 16px;
+                line-height: 36px;
+                border: 1px solid transparent;
+                transition: all .2s;
+                &:hover{
+                    border: 1px solid $bg;
+                }
+            }
+        }
+    }
+}
 
 
 
