@@ -226,8 +226,93 @@
         margin-bottom: 30px;
     }
 }
-
-
+// .consultation{
+//     margin-top: 50px;
+// }
+.consultation__inner{
+    padding-bottom: 40px;
+    background-image: url(../images/womanbg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    min-height: 460px;
+}
+.form__box{
+    max-width: 850px;
+    margin-top: 45px;
+    .form__box-inner{
+        display: flex;
+        justify-content: space-between;
+        input,label,textarea{
+            display: block;
+            width: 100%;
+        }
+        .form__box-left{
+            max-width: 260px;
+            width: 100%;
+        }
+        .form__box-right{
+            max-width: 555px;
+            width: 100%;
+            button{
+                color: #282828;
+                margin-top: 40px;
+                float: right;
+            }
+        }
+        label{
+            line-height: 36px;
+            color: #282828;
+        }
+        input{
+            margin-bottom: 8px;
+            outline: none;
+            height: 40px;
+            border: 1px solid #e6e6e6;
+            padding: 0px 10px;
+        }
+        select{
+            outline: none;
+            padding: 0px 10px;
+        }
+        textarea{
+            outline: none;
+            border: 1px solid #e6e6e6;
+            padding: 10px;
+            height: 207px;
+            resize: none;
+        }
+        .jq-selectbox.jqselect{
+            display: block;
+            width: 100%;
+            .jq-selectbox__select {
+                height: 40px;
+                border: 1px solid #e6e6e6;
+                padding-left: 17px;
+                // background-color: transparent;
+                // border-radius: 0;
+            }
+        }
+        .jq-selectbox__dropdown {
+            border: 1px solid #e6e6e6;
+            border-radius: 0px;
+            background: #fff;
+            box-shadow: none;
+            width: 100%;
+            padding-left: 17px;
+        }
+        .jq-selectbox__trigger-arrow{
+            color: #fff;
+            &::before{
+                content: '\f107';
+                position: absolute;
+                font-family: 'icomoon';
+                color: #000;
+                right: 13px;
+                top: 0;
+            }
+        } 
+    }
+}
 
   
 

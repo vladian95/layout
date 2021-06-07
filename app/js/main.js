@@ -5,5 +5,6 @@ $('.slider__inner').slick({
     prevArrow: '<button type="button" class="slick-btn slick-prev"></button>'
 });
 
+$('select').styler();
     
 });
