@@ -34,3 +34,20 @@ li{
     margin: 0;
     list-style: none;
 }
+.main__btn{
+    background-color: transparent;
+    border: 1px solid $bg;
+    padding: 13px 20px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    border-right-width: 21px;
+    position: relative;
+    &::before{
+        content: '\f105';
+        position: absolute;
+        font-family: 'icomoon';
+        right: -13px;
+        top: 12px;
+    }
+}
