@@ -152,7 +152,36 @@
         margin-top: 45px;
     }
 }
-
+.services__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 47px;
+    .description{
+        padding-left: 140px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 106px;
+            height: 2px;
+            background-color: $bg;
+            left: 0;
+            top: 25px;
+        }
+    }
+    .description__text{
+        max-width: 380px;
+        line-height: 18px;
+        color: #5e5e5e;
+    }
+    .services__top-btn{
+        color: #373636;
+        border: 3px solid #e6e6e6;
+        padding: 12px 38px;
+        margin-right: 39px;
+    }
+}
 
 
 
