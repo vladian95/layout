@@ -6,5 +6,10 @@ $('.slider__inner').slick({
 });
 
 $('select').styler();
+
+$('.news__slider-inner').slick({
+    nextArrow: '<button type="button" class="news__slick-btn news__slick-next"></button>',
+    prevArrow: '<button type="button" class="news__slick-btn news__slick-prev"></button>'
+});
     
 });

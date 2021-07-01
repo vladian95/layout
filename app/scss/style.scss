@@ -348,4 +348,216 @@
         }
     }
 }
+// news start
+.news{
+    padding: 55px 0px 110px;
+    background-color: #f9f9f9;
+}
+.news__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.news__slider{
+    max-width: 555px;
+    width: 100%;
+    background-color: #fff;
+    padding: 60px 35px 45px 70px;
+    position: relative;
+    box-shadow: 0px 5px 15.36px 0.64px rgba(128, 127, 127, 0.13);
+    position: relative;
+    &::before{
+        content: '*';
+        color: #fff;
+        font-size: 16px;
+        width: 65px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        position: absolute;
+        background-color: #ffc222;
+        top: 0;
+        left: 70px;
+    }
+}
+.news__blog{
+    max-width: 260px;
+    width: 100%;
+}
+.news__images{
+    position: relative;
+}
+.news__date{
+    position: absolute;
+    background-color: #ffc222;
+    height: 55px;
+    width: 50px;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 700;
+    top: 0px;
+    left: 10px;
+}
+.news__blog-title{
+    font-size: 16px;
+    font-weight: 500;
+    color: #242424;
+    padding: 12px 0px;
+}
+.news__blog-text{
+    color: #5e5e5e;
+    font-size: 14px;
+}
+.news__slider-title{
+    font-size: 18px;
+    line-height: 24px;
+    color: #242424;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.news__slider-text{
+    margin-bottom: 30px;
+    color: #5e5e5e;
+    font-size: 14px;
+}
+.news__slider-author{
+    color: #212020;
+    font-size: 14px;
+}
+.news__slick-btn{
+    height: 38px;
+    width: 38px;
+    background-color: transparent;
+    border: 1px solid #dadada;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover{
+        background-color: #ffc222;
+    }
+}
+.news__slick-next{
+    position: absolute;
+    bottom: -100px;
+    right: 20px;
+    &::before{
+        content: '\f104';
+        position: absolute;
+        font-family: 'icomoon';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #9e9c9c;
+        &:hover{
+            color: #fff;
+        }  
+    }
+}
+.news__slick-prev{
+    position: absolute;
+    bottom: -100px;
+    right: -35px;
+    &::before{
+        content: '\f105';
+        position: absolute;
+        font-family: 'icomoon';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #9e9c9c;
+        &:hover{
+            color: #fff;
+        }  
+    }
+}
+// news end
+.footer{
+    background-color: #595959;
+    padding: 28px 0px;
+}
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__info{
+    max-width: 400px;
+    .footer__title{
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 13px;
+    }
+    .footer__text{
+        font-size: 14px;
+        line-height: 18px;
+        color: #d3d2d2;
+        margin-bottom: 21px;
+    }
+    .footer__link{
+        padding: 18px 22px 18px 49px;
+        background-color: #ffc222;
+        color: #000;
+        position: relative;
+        &::before{
+            content: '\f013';
+            font-family: 'icomoon';
+            position: absolute;
+            left: 30px;
+        }
+    }
+}
+.footer__list{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    li{
+        a{
+            padding-left: 25px;
+            font-size: 16px;
+            line-height: 24px;
+            color: #fff;
+            position: relative;
+            &::before{
+                content: '\f10b';
+                font-family: 'icomoon';
+                position: absolute;
+                color: #ffc222;
+                left: 0;
+            }
+            &.footer__mail{
+                position: relative;
+                &::before{
+                    content: '\f003';
+                    font-family: 'icomoon';
+                    position: absolute;
+                    color: #ffc222;
+                    left: 0;
+                }
+            }
+            &.footer__adres{
+                position: relative;
+                &::before{
+                    content: '\f041';
+                    font-family: 'icomoon';
+                    position: absolute;
+                    color: #ffc222;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+.footer__map{
+    padding-top: 10px;
+}
 
+.footer__copy{
+    background-color: #303030;
+    padding: 15px 0px;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+@import 'media';
