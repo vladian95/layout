@@ -144,6 +144,9 @@
     text-align: center;
     padding-top: 130px;
     color: #fff;
+    .slider__title{
+        line-height: 36px;
+    }
     .slider__text{
         font-size: 18px;
         color: #d3d2d2;
@@ -552,6 +555,8 @@
 }
 .footer__map{
     padding-top: 10px;
+    
+    
 }
 
 .footer__copy{
